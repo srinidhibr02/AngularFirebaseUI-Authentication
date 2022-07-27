@@ -1,0 +1,6 @@
+<h1>FirebaseUI-Angular Tryout</h1>
+<firebase-ui (signInSuccessWithAuthResult)="successCallback($event)" 
+(signInFailure)="errorCallback($event)"
+(uiShown)="uiShownCallback()"></firebase-ui>
+<ion-button (click)="logout()">Logout</ion-button>
+<ion-button [routerLink]="['/home']">To Home Page</ion-button>
